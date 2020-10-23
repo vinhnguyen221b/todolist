@@ -12,6 +12,8 @@ CREATE TABLE todos(
     user_id UUID NOT NULL,
     description VARCHAR(255) NOT NULL,
     isdone BOOLEAN NOT NULL,
+    category_id INT NOT NULL,
+    priority_id INT NOT NULL,
     PRIMARY KEY (todo_id),
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
