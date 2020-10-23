@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NotFound(props) {
   return (
@@ -6,13 +7,13 @@ function NotFound(props) {
       <div className="col-lg-6 col-md-10 col-12">
         <div className="homepage">
           <div className="logo">
-            <img src="./logo.png" alt="" />
+            <img src="./notfound.png" alt="" />
           </div>
           <div className="slogan">Opps! Nothing here!</div>
 
           <div className="homeBtn">
             <Link className="btn btn-small btn-login" to="/">
-              HOME PAGE
+              HOME
             </Link>
           </div>
         </div>
