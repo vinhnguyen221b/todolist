@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import todoService from "../../service/todoService";
-import Checkbox from "./Checkbox";
-import EditTodo from "./EditTodo";
 import Pagination from "./Pagination";
 import paginate from "../../utils/paginate";
 import TableRow from "./TableRow";
@@ -40,7 +38,7 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
       filtered = filtered.filter((i) => i.priority_id === filter.priorities);
     }
     if (filter.isdone !== -1) {
-      filtered = filtered.filter((i) => i.isdone == filter.isdone);
+      filtered = filtered.filter((i) => i.isdone === filter.isdone);
     }
     return filtered;
   };
@@ -54,7 +52,7 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
           There{" "}
           {todos.length > 1
             ? `are ${todos.filter((t) => t.isdone === false).length} things`
-            : `is ${todos.filter((t) => t.isdone === false).length} thing`}{" "}
+            : `is ${todos.filter((t) => t.isdone === false).length} thing`}
           need to be done 🔥
         </p>
       )}
@@ -116,7 +114,7 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
         </select>
         <div className="search-bar">
           <span>
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </span>
           <input
             type="text"
@@ -151,6 +149,7 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
           )}
           {paginate(todos, pageIndex, pageSize).map((todo) => (
             <TableRow
+              key={todo._id}
               todo={todo}
               handleDelete={handleDelete}
               setTodoChange={setTodoChange}
