@@ -1,0 +1,359 @@
+.homepage,
+.userForm {
+  margin: 3rem;
+  background: linear-gradient(to right, #ffb347, #ffcc33);
+  border-radius: 50px;
+  text-align: center;
+  padding: 3rem;
+}
+
+.homepage .logo img {
+  width: 100px;
+}
+
+.homepage .slogan {
+  font-size: 48px;
+  color: #67b26f;
+  font-weight: bold;
+  font-family: "Lemonada", cursive;
+  margin: 1rem 0;
+}
+
+.homepage .description {
+  color: white;
+  font-size: 22px;
+  margin: 1rem 0 2rem;
+  text-align: justify;
+}
+
+.homepage .homeBtn a {
+  margin: 0 0.5rem;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  width: 100px;
+}
+
+.homepage .homeBtn .btn-login {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.homepage .homeBtn .btn-register {
+  background: linear-gradient(to right, #000000, #0f9b0f);
+}
+
+.userForm h2 {
+  font-family: "Lemonada", cursive;
+  color: #203a43;
+  font-size: 42px;
+  font-weight: 900;
+}
+.userForm label {
+  color: #203a43;
+  margin: 0.5rem;
+  font-size: 20px;
+}
+.userForm input {
+  border: 1px solid #2c5364;
+  border-radius: 10px;
+  background: transparent;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px 0px #2c5364;
+  width: 50%;
+  transition: 0.3s width ease-in;
+  color: white;
+  padding: 0.3rem 0.5rem;
+}
+
+.userForm input:focus {
+  outline: none;
+  border: 1px solid #0f9b0f;
+  box-shadow: 1px 1px 10px 0px #0f9b0f;
+  background: transparent;
+  width: 75%;
+}
+
+.userForm .loginBtn {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  margin: 0 1rem;
+}
+
+.userForm .homeBtn {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, #000000, #0f9b0f);
+  margin: 0 1rem;
+  border: none;
+}
+
+.userForm .registerBtn {
+  color: white;
+
+  font-weight: bold;
+  background: linear-gradient(to right, #000000, #0f9b0f);
+}
+
+.userForm .alert {
+  color: #dc281e !important;
+}
+
+.inputForm {
+  margin: 2rem auto 3rem;
+  text-align: center;
+}
+.inputForm h2 {
+  font-size: 42px;
+  font-family: "Lemonada", cursive;
+  color: #f7c760;
+  margin-bottom: 2rem;
+}
+
+.inputForm input {
+  border: 1px solid #f7c760;
+  border-radius: 10px;
+  background: transparent;
+  margin: 0 1rem;
+  box-shadow: 1px 1px 10px 0px #f7c760;
+  width: 50%;
+  transition: 0.3s width ease-in;
+  color: white;
+  padding: 0.3rem 0.5rem;
+}
+
+.inputForm input:focus {
+  outline: none;
+  border: 1px solid #f7772d;
+  box-shadow: 1px 1px 10px 0px #f7772d;
+  width: 75%;
+}
+
+.inputForm .select-block {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.inputForm .select-block select {
+  width: 40%;
+  background: transparent;
+  border: 1px solid #f7c760;
+  box-shadow: 1px 1px 10px 0px #f7c760;
+  color: white;
+  transition: 0.3s width ease-in;
+  /* margin: 1rem auto; */
+}
+
+.inputForm .select-block select:focus {
+  border: 1px solid #f7772d;
+  box-shadow: 1px 1px 10px 0px #f7772d;
+  width: 45%;
+}
+.inputForm .select-block select option {
+  color: black;
+  /* margin: 1rem auto; */
+}
+.inputForm .addBtn {
+  margin: 1rem auto;
+  display: block;
+  width: 50%;
+  color: white;
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+.inputForm .logoutBtn {
+  background-color: #556270;
+  color: white;
+  transition: 0.5s background-color ease;
+}
+
+.inputForm .logoutBtn:hover {
+  background: #f7c760;
+  color: white;
+}
+
+.caption {
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+}
+.filter {
+  margin: 0.5rem 0 1rem;
+}
+.filter span {
+  margin-right: 1rem;
+  color: #f7c760;
+}
+.filter select {
+  background: transparent;
+  border: 1px solid #f7c760;
+  box-shadow: 1px 1px 10px 0px #f7c760;
+  color: white;
+  transition: 0.3s box-shadow ease-in;
+  margin-right: 1rem;
+}
+.filter select:focus {
+  border: 1px solid #f7772d;
+  box-shadow: 1px 1px 10px 0px #f7772d;
+}
+
+.filter .search-bar {
+  display: inline-block;
+  margin-left: 1rem;
+  position: relative;
+}
+.filter .search-bar span {
+  position: absolute;
+  margin-right: 0;
+  margin-left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter .search-bar input {
+  background: transparent;
+  border: 1px solid #f7c760;
+  box-shadow: 1px 1px 10px 0px #f7c760;
+  color: white;
+  transition: 0.3s box-shadow ease-in;
+  padding-left: 30px;
+}
+.filter .search-bar input:focus {
+  outline: none;
+  border: 1px solid #f7772d;
+  box-shadow: 1px 1px 10px 0px #f7772d;
+}
+.tableTodo th,
+.tableTodo td {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-link {
+  background: transparent;
+  color: #f7c760;
+  border: 1px solid #f7c760;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #f7c760;
+  border-color: #f7c760;
+}
+
+.modal-body {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.modal-body input {
+  border: 1px solid #f7c760;
+  border-radius: 10px;
+  background: transparent;
+  margin: 0 1rem;
+  box-shadow: 1px 1px 10px 0px #f7c760;
+  width: 50%;
+  transition: 0.3s width ease-in;
+  color: white;
+  padding: 0.3rem 0.5rem;
+}
+
+.modal-body input:focus {
+  outline: none;
+  border: 1px solid #f7772d;
+  box-shadow: 1px 1px 10px 0px #f7772d;
+  width: 75%;
+}
+
+.modal-body select {
+  width: 50%;
+  background: transparent;
+  border: 1px solid #f7c760;
+  box-shadow: 1px 1px 10px 0px #f7c760;
+  color: white;
+  transition: 0.3s width ease-in;
+  margin: 2rem auto;
+}
+.modal-body select:focus {
+  border: 1px solid #f7772d;
+  box-shadow: 1px 1px 10px 0px #f7772d;
+}
+
+.modal-content {
+  background: linear-gradient(to right, #67b26f, #4ca2cd);
+}
+
+.modal-content .modal-header,
+.modal-content .modal-footer {
+  border: none;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .homepage,
+  .userForm {
+    margin: 1.5rem;
+    padding: 1rem;
+  }
+
+  .homepage .slogan {
+    font-size: 36px;
+  }
+  .inputForm h2 {
+    font-size: 32px;
+  }
+  .inputForm input {
+    width: 80%;
+  }
+  .inputForm input:focus {
+    width: 80%;
+  }
+  .inputForm .select-block {
+    width: 80%;
+  }
+  .inputForm .select-block select {
+    width: 45%;
+  }
+  .inputForm .addBtn {
+    width: 80%;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  .tableTodo th,
+  .tableTodo td {
+    font-size: 16px;
+  }
+  .filter select {
+    font-size: 13px;
+  }
+  .filter select option {
+    font-size: 13px;
+  }
+  .filter .search-bar {
+    display: block;
+    margin-left: 0;
+    margin: 1rem 0;
+  }
+  .filter .search-bar span i {
+    font-size: 13px;
+  }
+  .filter .search-bar input {
+    font-size: 13px;
+    width: 100%;
+  }
+  .cellPriorityIcon {
+    font-size: 24px !important;
+    text-align: center !important;
+  }
+  .modal-body input {
+    width: 85%;
+  }
+  .modal-body input:focus {
+    width: 85%;
+  }
+  .modal-body select {
+    width: 85%;
+  }
+}
