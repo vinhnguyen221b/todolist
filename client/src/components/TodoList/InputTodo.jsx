@@ -21,7 +21,6 @@ function InputTodo({ user, setTodoChange, categories, priorities }) {
       toast.success("Add todo successfully!");
       setInputs({ ...inputs, description: "" });
       setTodoChange(true);
-      console.log(inputs);
     } catch (error) {
       console.log(error);
     }

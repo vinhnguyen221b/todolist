@@ -148,7 +148,6 @@
 .inputForm .select-block select:focus {
   border: 1px solid #f7772d;
   box-shadow: 1px 1px 10px 0px #f7772d;
-  width: 45%;
 }
 .inputForm .select-block select option {
   color: black;

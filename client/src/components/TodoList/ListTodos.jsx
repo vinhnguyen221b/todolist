@@ -18,9 +18,7 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
   });
   const handleDelete = async (id) => {
     try {
-
-
-    const { data } = await todoService.removeTodo(id);
+      const { data } = await todoService.removeTodo(id);
       toast.success(data);
       setTodos(todos.filter((todo) => todo.todo_id !== id));
     } catch (error) {
@@ -48,7 +46,6 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
   };
   useEffect(() => {
     setTodos(filterData(allTodos));
-    console.log(allTodos);
   }, [allTodos, filter]);
   return (
     <>

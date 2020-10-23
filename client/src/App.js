@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Register from "./components/Register";
 import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 
 toast.configure();
 function App() {
@@ -43,6 +44,7 @@ function App() {
             currentUser ? <Redirect to="/" /> : <Register {...props} />
           }
         />
+        <Route exact path="/not-found" component={NotFound} />
         <Route
           exact
           path="/"
@@ -50,6 +52,7 @@ function App() {
             !currentUser ? <Home /> : <Dashboard {...props} />
           }
         />
+        <Redirect to="not-found" />
       </Switch>
     </div>
   );
