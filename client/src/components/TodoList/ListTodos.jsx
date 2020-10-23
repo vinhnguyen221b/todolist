@@ -48,7 +48,7 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
   }, [allTodos, filter]);
   return (
     <>
-      {/* {todos.length > 0 && filter.isdone !== true && (
+      {todos.length > 0 && filter.isdone !== true && (
         <p className="caption">
           There{" "}
           {todos.length > 1
@@ -56,8 +56,8 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
             : `is ${todos.filter((t) => t.isdone === false).length} thing`}
           need to be done 🔥
         </p>
-      )} */}
-      {/* {todos.length > 0 && filter.isdone === true && (
+      )}
+      {todos.length > 0 && filter.isdone === true && (
         <p className="caption">
           There{" "}
           {todos.length > 1
@@ -65,7 +65,7 @@ function ListTodos({ allTodos, setTodoChange, priorities }) {
             : `is ${todos.length} thing`}{" "}
           have been done 👏
         </p>
-      )} */}
+      )}
       <div className="filter">
         <span className="d-none d-md-inline">
           <i className="fas fa-filter"></i>
