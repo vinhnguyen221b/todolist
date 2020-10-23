@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import Checkbox from "./Checkbox";
 import EditTodo from "./EditTodo";
-function TableRow({ todo, handleDelete, priorities, setTodoChange }) {
+function TableRow({ key, todo, handleDelete, priorities, setTodoChange }) {
   const [isChecked, setIsChecked] = useState(todo.isdone);
   return (
     <tr
-      key={todo.todo_id}
+      key={key}
       style={{
         background:
           isChecked && "linear-gradient(to right, #292e49, #536976, #bbd2c5)",
