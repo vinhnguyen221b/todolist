@@ -27,4 +27,3 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log("Server listening or port", port));
 
-https://tgif2020.sg/live/1
